@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "timakimitmod",
+	"version": "${version}",
+	"name": "Timakimit Mod",
+	"description": "this mod is just test so idk how you found it",
+
+	"authors": [
+		"timakimit"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/timakimitmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.timakimit.timakimitmod.TimakimitMod"
+		],
+		"client": [
+			"net.timakimit.timakimitmod.TimakimitModClient"
+		],
+		"fabric-datagen": [
+			"net.timakimit.timakimitmod.TimakimitModDataGenerator"
+		]
+	},
+	"mixins": [
+		"timakimitmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
